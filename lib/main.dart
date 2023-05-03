@@ -17,7 +17,7 @@ void main() => runApp(
             create: (context) => A_Provider_screen(),
           ),
         ],
-        child: Platform.isAndroid?CupertinoApp(
+        child: Platform.isIOS?CupertinoApp(
           debugShowCheckedModeBanner: false,
           routes: {
             "/":(p0) => I_home_screen(),
