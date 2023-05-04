@@ -26,13 +26,13 @@ class _I_home_screenState extends State<I_home_screen> {
       backgroundColor: CupertinoColors.systemRed,
       middle: Text("Settings ui",style: TextStyle(fontSize: 20,color: CupertinoColors.white),),
     ),
-      backgroundColor: CupertinoColors.systemGrey5,
+      backgroundColor: CupertinoColors.lightBackgroundGray,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //commn
           Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(20.0),
             child: Text("Common",style: TextStyle(color: CupertinoColors.inactiveGray),),
           ),
           //language
@@ -40,7 +40,7 @@ class _I_home_screenState extends State<I_home_screen> {
             backgroundColor: CupertinoColors.white,
             title: Text(
               "Language",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,color: CupertinoColors.black),
             ),
             trailing: Row(
               children: [
@@ -55,7 +55,7 @@ class _I_home_screenState extends State<I_home_screen> {
             backgroundColor: CupertinoColors.white,
             title: Text(
               "Environment",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,color: CupertinoColors.black),
             ),
             trailing: Row(
               children: [
@@ -67,7 +67,7 @@ class _I_home_screenState extends State<I_home_screen> {
           ),
           //account
           Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(20.0),
             child: Text("Account",style: TextStyle(color: CupertinoColors.inactiveGray),),
           ),
           //phone
@@ -78,7 +78,7 @@ class _I_home_screenState extends State<I_home_screen> {
           Foldor1("Sign out", Icon(CupertinoIcons.square_arrow_right,color: CupertinoColors.inactiveGray,),),
           //security
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(20.0),
             child: Text("Security",style: TextStyle(color: CupertinoColors.inactiveGray),),
           ),
           //look
@@ -86,7 +86,7 @@ class _I_home_screenState extends State<I_home_screen> {
             backgroundColor: CupertinoColors.white,
             title: Text(
               "Look app in background",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,color: CupertinoColors.black),
             ),
             leading: Icon(CupertinoIcons.device_phone_portrait,color: CupertinoColors.inactiveGray,),
             trailing: CupertinoSwitch(
@@ -103,7 +103,7 @@ class _I_home_screenState extends State<I_home_screen> {
             backgroundColor: CupertinoColors.white,
             title: Text(
               "Use Fingerprint",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,color: CupertinoColors.black),
             ),
             leading: Icon(CupertinoIcons.hand_raised_fill,color: CupertinoColors.inactiveGray,),
             trailing: CupertinoSwitch(
@@ -119,7 +119,7 @@ class _I_home_screenState extends State<I_home_screen> {
             backgroundColor: CupertinoColors.white,
             title: Text(
               "Change Password",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,color: CupertinoColors.black),
             ),
             leading: Icon(CupertinoIcons.lock_fill,color: CupertinoColors.inactiveGray,),
             trailing: CupertinoSwitch(
@@ -132,7 +132,7 @@ class _I_home_screenState extends State<I_home_screen> {
           ),
           //misc
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(20.0),
             child: Text("Misc",style: TextStyle(color: CupertinoColors.inactiveGray),),
           ),
           //service
@@ -148,7 +148,7 @@ class _I_home_screenState extends State<I_home_screen> {
       backgroundColor: CupertinoColors.white,
       title: Text(
         "$title",
-        style: TextStyle(fontSize: 18),
+        style: TextStyle(fontSize: 18,color: CupertinoColors.black),
       ),
       leading: i1,
       trailing: Icon(CupertinoIcons.chevron_right,color: CupertinoColors.inactiveGray,size: 20,),
